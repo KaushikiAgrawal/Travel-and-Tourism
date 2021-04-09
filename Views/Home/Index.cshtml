@@ -1,0 +1,128 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Wanderlust </title>
+<link rel="stylesheet" type="text/css" href="~/css/style.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../Image/unnamed.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text2{
+    position:absolute;
+    top:75%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 40%;
+  padding: 20px;
+  height:50%;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"><img src="../Image/unnamed.jpg"></div>
+
+<div class="bg-text2">
+
+<div class="text-box"><input list="states" type = "text" placeholder = "Search your destination..." style= "text-align:center;font-size: 15pt; height: 60px; width: 450px; border-radius : 8px;"></div>
+<datalist id="states">
+  <option value="Andhra Pradesh"></option>
+  <option value="Arunachal Pradesh"></option>
+  <option value="Assam"></option>
+  <option value="Bihar"></option>
+  <option value="Chhattisgarh"></option>
+  <option value="Goa"></option>
+  <option value="Gujarat"></option>
+  <option value="Haryana"></option>
+  <option value="Himachal Pradesh"></option>
+  <option value="Jharkhand"></option>
+  <option value="Karnataka"></option>
+  <option value="Kerela"></option>
+  <option value="Madhya Pradesh"></option>
+  <option value="Maharashtra"></option>
+  <option value="Manipur"></option>
+  <option value="Meghalaya"></option>
+  <option value="Mizoram"></option>
+  <option value="Nagaland"></option>
+  <option value="Odisa"></option>
+  <option value="Punjab"></option>
+  <option value="Rajasthan"></option>
+  <option value="Sikkim"></option>
+  <option value="Tamil Nadu"></option>
+  <option value="Telangana"></option>
+  <option value="Tripura"></option>
+  <option value="Uttar Pradesh"></option>
+  <option value="Uttarakhand"></option>
+  <option value="West Bengal"></option>
+</datalist>
+</div>
+<br> <br><br>
+<div class="bg-text">
+<div class="text">
+    <p>We provide services like:</p>
+    <p>
+        Transport Booking <br> Hotel Booking <br> Search for destination and choose best places for you<br>
+        Get to know about tourist places and may more..
+    </p>
+@* <pre><p>
+We provide services like : <br>
+   <ul>
+   <li> Transport Booking </li>
+   <li> Hotel Booking </li>
+   <li> Search for destinations and choose your destination </li>
+   <li> Get to know about tourist places and many more.. </li>
+   </ul>
+</p>
+</pre>
+</div>
+  <h2>Blurred Background</h2>
+  <h1 style="font-size:50px">I am John Doe</h1>
+  <p>And I'm a Photographer</p> *@
+</div>
+</div>
+
+</body>
+</html>
+
+  
+  
+

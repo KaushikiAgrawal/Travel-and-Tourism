@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Travel And Tourism</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>   
+    <style>
+
+      .dropbtn {
+        font-size: 18px;
+        border: none;
+        cursor: pointer;
+        height: 53px;
+        background-color: transparent; 
+      }
+
+      .dropdown {
+        
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 8px 10px; 
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover 
+      {
+        background-color: lightblue;
+        }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: lightblue;
+      }
+
+
+      nav{
+          height:55px;
+          text-align:center;
+          margin:auto;
+          font-family:'Times New Roman', Times, serif;
+          font-size: 18px;
+          z-index: 99999;
+      }
+      nav a{
+          margin-top:0;
+          margin-bottom: 0;
+          float: none;
+          display: block;
+          width: 100%;
+      }
+      nav a:hover {
+        background-color: lightblue;
+        color: black;
+        height:50px;
+      }
+
+      @@media screen and (max-width: 600px) {
+        nav a:not(:first-child), .dropdown .dropbtn {
+          display: none;
+        }
+        nav a.icon {
+          float: right;
+          display: block;
+        }
+      }
+
+      @@media screen and (max-width: 600px) {
+        nav.responsive {position: relative;}
+        nav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        nav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+      nav.responsive .dropdown {float: none;}
+      nav.responsive .dropdown-content {position: relative;}
+      nav.responsive .dropdown .dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+      .dropdown-item{
+        color:white;
+      }
+      #carouselExampleControls a:hover{
+          color:white;
+      }
+      #carouselExampleControls a:visited {
+        text-decoration: none;
+      }
+
+
+      #carouselExampleControls a:active {
+        text-decoration: underline;
+      }
+
+
+    footer {
+    background-color: #ffd800;
+    color: ghostwhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footerlinks {
+    color: ghostwhite;
+    text-decoration: none !important;
+    min-width: 300px;
+    font-family:'Times New Roman', Times, serif;
+   
+}
+.footerlinks:hover {
+    color: #ffd800;
+}
+#footer1 {
+    background-color: darkslategray;
+
+
+}
+#footer2 {
+    background: #082323;
+}
+
+ .navbar-collapse{
+  backdrop-filter: blur(15px);
+} 
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-style:italic;
+}
+
+  </style>
+</head>
+<body>
+  <div style="padding-left:40px;padding-right:40px;"> 
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src= "~/Image/priroda-holmy-derevya-derevo.jpg" alt="First slide" width=150 height=300>
+      <div class="text">Darjeeling, West Bengal</div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/tropical-beach-wallpaper-beach-backgrounds-587fbb765f9b584db3241860.jpg" alt="Second slide" width=150 height=300>
+    <div class="text">Thiruvananthapuram, Kerala</div>
+    </div>
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/secret-beach-makena-1579843114.jpg" alt="Fourth slide" width=150 height=300>
+    </div>
+
+    <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/UtkIFs.jpg" alt="Fifth slide" width=150 height=300>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/thumb-1920-433878.jpg" alt="Fifth slide" width=150 height=300>
+    </div>
+    
+    <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/ypRMim.jpg" alt="Sixth slide" width=150px height=300px>
+       <div class="text">Bangaram Beach, Lakshadweep</div>
+    </div>
+     <div class="carousel-item">
+      <img class="d-block w-100" src="~/Image/Manali2.jpg" alt="Sixth slide" width=150px height=300px>
+      <div class="text">Manali, Himachal Pradesh</div>
+    </div>
+  
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" style="text-decoration:None;">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next" style="text-decoration:None;">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="backdrop-filter: blur(15px);">
+    <span class="navbar-brand" style="font-family:Times New Roman, Times, serif; font-size: 18px;"><img src="~/Image/newlogo.png" height=54px width=70px/>WanderLust</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon" ></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active" style="padding-left:70px;">
+          <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+      </li>
+
+
+      <li class="nav-item dropdown" style="padding-left:70px;">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        States
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(35px);">
+
+        <div style="overflow:auto; height:400px;">
+                        <a href="#" class="dropdown-item">Andhra Pradesh</a>
+                        <a href="#" class="dropdown-item">Andaman and Nicobar Islands</a>
+                        <a href="#" class="dropdown-item">Arunachal Pradesh</a>
+                        <a href="#" class="dropdown-item">Assam</a>
+                        <a href="#" class="dropdown-item">Bihar</a>
+                        <a href="#" class="dropdown-item">Chandigarh</a>
+                        <a href="#" class="dropdown-item">Chhattisgarh</a>
+                        <a href="#" class="dropdown-item">Daman & Diu</a>
+                        <a href="#" class="dropdown-item">Delhi</a>
+                        <a href="#" class="dropdown-item">Goa</a>
+                        <a href="#" class="dropdown-item">Gujarat</a>
+                        <a href="#" class="dropdown-item">Haryana</a>
+                        <a href="#" class="dropdown-item">Himachal Pradesh</a>
+                        <a href="#" class="dropdown-item">Jammu & Kashmir</a>
+                        <a href="#" class="dropdown-item">Jharkhand</a>
+                        <a href="#" class="dropdown-item">Karnataka</a>
+                        <a href="#" class="dropdown-item">Kerala</a>
+                        <a href="#" class="dropdown-item">Ladakh</a>
+                        <a href="#" class="dropdown-item">Lakshadweep</a>
+                        <a href="#" class="dropdown-item">Madhya Pradesh</a>
+                        <a href="#" class="dropdown-item">Maharashtra</a>
+                        <a href="#" class="dropdown-item">Manipur</a>
+                        <a href="#" class="dropdown-item">Meghalaya</a>
+                        <a href="#" class="dropdown-item">Mizoram</a>
+                        <a href="#" class="dropdown-item">Nagaland</a>
+                        <a href="#" class="dropdown-item">Odisha</a>
+                        <a href="#" class="dropdown-item">Puducherry</a>
+                        <a href="#" class="dropdown-item">Punjab</a>
+                        <a href="#" class="dropdown-item">Rajasthan</a>
+                        <a href="#" class="dropdown-item">Sikkim</a>
+                        <a href="#" class="dropdown-item">Tamil Nadu</a>
+                        <a href="#" class="dropdown-item">Telangana</a>
+                        <a href="#" class="dropdown-item">Uttarakhand</a>
+                        <a href="#" class="dropdown-item">Uttar Pradesh</a>
+                        <a href="#" class="dropdown-item">West Bengal</a>
+    </div>
+  </div>
+ </li>
+      
+      <li class="nav-item dropdown" style="padding-left:70px;">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Destination Type
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.3); backdrop-filter: blur(35px);">
+                        <a href="#" class="dropdown-item">Adventure</a>
+                        <a href="#" class="dropdown-item">Historical</a>
+                        <a href="#" class="dropdown-item">Safari</a>
+                        <a href="#" class="dropdown-item">Beach</a>
+                        <a href="#" class="dropdown-item">Ski</a>
+
+        </div>
+      </li>
+
+      
+
+                    
+                        <li class="nav-item" style="padding-left:70px;" >
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a>
+                        </li>
+
+                          <li class="nav-item" style="padding-left:70px;">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Registration">User</a>
+                        </li> 
+
+                        <li class="nav-item" style="padding-left:70px;">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a>
+                        </li>
+
+    </ul>
+  </div>
+</nav>
+    </header>
+
+    <div class="container">
+        <main role="main">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+      <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                        
+                            <center><pre><asp:LinkButton class="footerlinks" ID="LinkButton1" runat="server">Terms & Conditions            </asp:LinkButton> &nbsp;  <asp:LinkButton class="footerlinks" ID="LinkButton2" runat="server">Privacy Policy            </asp:LinkButton> &nbsp; <asp:LinkButton class="footerlinks" ID="LinkButton3" runat="server">Blog            </asp:LinkButton>&nbsp; <asp:LinkButton class="footerlinks" ID="LinkButton4" runat="server">Cookie Consent            </asp:LinkButton> &nbsp;<asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">About Us            </asp:LinkButton> &nbsp;<asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">FAQ            </asp:LinkButton> &nbsp;</pre></center>
+                            
+                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server"><img src="~/Image/facebook.png" height="30" width="30" /></asp:LinkButton>
+                            &nbsp;
+                            <asp:LinkButton class="footerlinks" ID="LinkButton6" runat="server"><img src="~/Image/twitter.png" height="30" width="30"  /></asp:LinkButton>
+                            &nbsp;
+
+                            <asp:LinkButton class="footerlinks" ID="LinkButton7" runat="server"><img src="~/Image/insta.png" height="30" width="30" /></asp:LinkButton>
+                            &nbsp;
+
+                             <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server"><img src="~/Image/youtube.png" height="30" width="35" /></asp:LinkButton> 
+                            <br /><br />
+                            
+                            <pre style="color:white;font-family:Times New Roman, Times, serif;">Call Us On <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server"><img src="~/Image/phone.png" height="20" width="20"/></asp:LinkButton> <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">+91-900-123-4567</asp:LinkButton></pre>
+                        </p>
+ 
+                    </div>
+ 
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:ghostwhite">&copy Copyright 2021. All right reserved. <a class="footerlinks" href="#" target="_blank">Wanderlust</a></p>
+                    </div>
+                </div>
+            </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
