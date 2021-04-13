@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj": {}
+    "D:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj": {}
   },
   "projects": {
-    "d:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj": {
+    "D:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj",
+        "projectUniqueName": "D:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj",
         "projectName": "project1",
-        "projectPath": "d:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj",
+        "projectPath": "D:\\TravelAndTourism\\Travel-and-Tourism-CTS\\project1.csproj",
         "packagesPath": "C:\\Users\\Kaushiki\\.nuget\\packages\\",
-        "outputPath": "d:\\TravelAndTourism\\Travel-and-Tourism-CTS\\obj\\",
+        "outputPath": "D:\\TravelAndTourism\\Travel-and-Tourism-CTS\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
