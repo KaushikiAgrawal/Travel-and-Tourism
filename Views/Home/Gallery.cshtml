@@ -1,6 +1,280 @@
 @{
     ViewData["Title"] = "Gallery";
 }
-<h1>@ViewData["Title"]</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gallery</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .hovereffects{
+            width:100%;
+            height:100%;
+            overflow:hidden;
+            position:relative;
+            text-align:center;
+            cursor:default;
+            margin-bottom:15px;
 
-<p style="font-family:Times New Roman, Times, serif; font-style:italic;">This page will store state wise tourist places.</p>
+        }
+        .hovereffects .overlay{
+            width:100%;
+            height:100%;
+            position:absolute;
+            overflow:hidden;
+            top:0;
+            left:0;
+            opacity:0;
+            background-color:rgba(0,0,0,0.5);
+            -webkit-transition:all 0.4s ease-in-out;
+            transition: all 0.4s ease-in-out;
+        }
+        .hovereffects img{
+            display:block;
+            position:relative;
+            -webkit-transition: all 0.4s linear;
+            transition: all 0.4s linear;
+        }
+        .hovereffects h2{
+            
+            color:#fff;
+            text-align:center;
+            position:relative;
+            font-size:25px;
+            background:rgba(0,0,0,0.6);
+            -webkit-transform: translateY(-100px);
+            -ms-transform: :translateY(-100px);
+            transform:translateY(-100px);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            padding:10px;
+        }
+        .hovereffects a.info{
+            text-decoration:none;
+            display:inline-block;
+            text-transform: uppercase;
+            color:#fff;
+            border: 1px solid #fff;
+            background-color: transparent;
+            opacity:0;
+            filter:alpha(opacity=0);
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+            margin: 50px 0 0;
+            padding: 7px 14px;
+        }
+        .hovereffects a.info:hover{
+            box-shadow: 0 0 5px #fff;
+        }
+        .hovereffects:hover img{
+            -ms-transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+        .hovereffects:hover .overlay{
+            opacity: 1;
+            filter: alpha(opacity=100);
+        }
+        .hovereffects:hover h2, .hovereffects:hover a.info{
+            opacity: 1;
+            filter: alpha(opacity=100);
+            -ms-transform: translateY(0);
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+        .hovereffects:hover a.info{
+            -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+        }
+
+
+    </style>
+    <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            <img src="~/Image/andra.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Andhra Pradesh</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/arunachal.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Arunachal Pradesh</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/assam.jpeg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Assam</h2>
+                                <a class="info" href="#">Take me here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/andaman.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Andaman and Nicobar Island</h2>
+                                <a class="info" href="#">Take me here</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/delhi.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Delhi</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/goa.jpeg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Goa</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/gujarat.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Gujarat</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/himachal.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Himachal Pradesh</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/leh.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Leh and Ladakh</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/kerala.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Kerala</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/kashmir.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Jammu and Kashmir</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/karnataka.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Karnataka</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/punjab.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Punjab</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                            
+                            <img src="~/Image/raj.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Rajasthan</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+            
+                            <img src="~/Image/sikkim.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Sikkim</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+            
+                            <img src="~/Image/tn.jpeg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Tamil Nadu</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+                        
+                            <img src="~/Image/uttar.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>Uttar Pradesh</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <div class="hovereffects">
+            
+                            <img src="~/Image/begal.jpg" width="100%" height="250px">
+                            <div class="overlay">
+                                <h2>West Bengal</h2>
+                                <a class="info" href="#">Take Me Here</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+    </body>
+</html>

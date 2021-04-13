@@ -66,11 +66,13 @@
           float: none;
           display: block;
           width: 100%;
+           z-index: 99999;
       }
       nav a:hover {
         background-color: lightblue;
         color: black;
         height:50px;
+         z-index: 99999;
       }
 
       @@media screen and (max-width: 600px) {
@@ -94,6 +96,7 @@
           float: none;
           display: block;
           text-align: left;
+           z-index: 99999;
         }
       nav.responsive .dropdown {float: none;}
       nav.responsive .dropdown-content {position: relative;}
