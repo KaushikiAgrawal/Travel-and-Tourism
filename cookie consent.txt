@@ -1,0 +1,251 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="cookieConsent.aspx.cs" Inherits="WebApplication2.cookieConsent" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        
+        
+        .First {
+            width: 800px;
+            height: 900px;
+            margin: auto;
+            
+            
+        }
+
+        .card {
+            background: rgba(255,255,255,.7);
+        }
+        .f {
+
+            background-image: url("imgs/final%20bg%20image.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 50px;
+        }
+        #btn:hover, #btn1:hover{
+            background-color: black;
+            color: white;
+            border:  2px solid white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+        }
+        
+        #btn, #btn1 {
+            display: block;
+            color: white;
+            width: 100%;
+            border: none;
+            background:  transparent;
+            color: blue;
+            padding: 8px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+            
+            border:  2px solid blue;
+
+        }
+        .purpose {
+            color: blue;
+            
+        }
+        .purpose:hover{
+            color: black;
+        }
+        
+        #flexSwitchCheckChecked {
+            width: 20%;
+            height: 5%;
+            
+        }
+        pre{
+            letter-spacing: .1px;
+        }
+        .chkbox1, .rememberMe {
+            float: left;
+        }
+        .headinglogin {
+            padding-top: .5em;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 50px;
+        }
+        h4, h5 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        .itsLink {
+            text-decoration:none;
+            color: blue;
+        }
+        .itsLink:hover {
+            color: black;
+
+        }
+        
+        .card0 {
+            box-shadow: 0px 4px 8px 0px #757575;
+            border-radius: 0px;
+
+        }
+        .card1 {
+            text-align:justify;
+        }
+
+       .card2 {
+             margin: 0px 40px
+       }
+
+       .border-line {
+            border-right: 1px solid #EEEEEE
+        }
+
+       
+        
+        .card1 {
+            height: 10px;
+            padding-bottom: 100px;
+        }
+
+        .card0 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+
+
+
+
+
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+   
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #304FFE;
+    outline-width: 0
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+a {
+    color: inherit;
+    cursor: pointer
+}
+
+.btn-blue {
+    background-color: #1A237E;
+    width: 150px;
+    color: #fff;
+    border-radius: 2px
+}
+
+.btn-blue:hover {
+    background-color: #000;
+    cursor: pointer
+}
+
+
+
+@media screen and (max-width: 991px) {
+    
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #EEEEEE !important;
+        margin: 0px 15px
+    }
+}
+    </style>
+    <div class="f">
+    <div class="First">
+
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-5">
+        
+    <div class="card card0 border-0">
+        <center><h4 class="headinglogin">Cookie Consent</h4></center>
+        <div class="row d-flex">
+            <div class="col-lg-6">
+                <div class="card1 px-5">
+                    <br /><br />
+                    
+                    <h4><b>This site uses cookies</b></h4><br />
+                    <p>Wanderlust and our partners use technology such as cookies on our site to personalize content and ads, provide social media features and analyze our traffic. You can revist your consent choices at anytime by returning to this site. By browsing our website, you consent to our use of cookies and other tracking technologies.</p>
+                    <br /><button type="submit" class="text-center" id="btn">Accept all cookies</button><br />
+                    <button type="submit" class="text-center" id="btn1">Reject all cookies</button><br />
+                    <a href="#" class="purpose"><center>Show purposes</center></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card2 card border-0 px-4 py-5">
+                    <div class="row mb-4 px-3">
+                        <pre><h5 class="mb-0 mr-4 mt-2"><i class='fas fa-key'>  Privacy Settings</i></h5></pre>
+                        <hr /><br /><br />
+
+                      <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"  />
+                      <label class="form-check-label" for="flexSwitchCheckChecked"><a class="itsLink">Accessing a device</a></label>
+                      </div> <hr />
+
+                    <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"  />
+                      <label class="form-check-label" for="flexSwitchCheckChecked"><a class="itsLink">Analytics</a></label>
+                      </div> <hr />
+
+                        <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" />
+                      <label class="form-check-label" for="flexSwitchCheckChecked"><a class="itsLink">Advertising Personalisation</a></label>
+                      </div> <hr />
+
+                        <div class="form-check form-switch">
+                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked"  />
+                      <label class="form-check-label" for="flexSwitchCheckChecked"><a class="itsLink">Content Personalisation</a></label>
+                      </div> <hr />
+
+                    
+                    </div>
+
+                        <div class="buttonSet">
+                        <button type="submit" id="btn">Save and Exit</button><br />
+                        <button type="submit" id="btn">Cancel</button></div>
+
+
+                       <pre> <a href="#" class="ml-auto mb-0 text-sm"></a></pre>
+                    </div>
+
+                       <div class="row mb-3 px-3"></div>
+                    <div class="row mb-4 px-3"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+       
+</div>
+</div>
+        </div>
+  </div>
+</asp:Content>
