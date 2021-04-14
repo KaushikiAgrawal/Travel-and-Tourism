@@ -9,5 +9,7 @@ login---shekhar
 hotel--shekhar 
 admin page--shekhar 
 
+Admin Page - Kaushiki
+
 under progress
 hedder and footer--anjali 
