@@ -1,0 +1,223 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication2.WebForm1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+    
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <style>
+        .div1 {
+            
+            background-color: white;
+            height:100%;
+            width: 100%;
+        }
+        .div2 {
+            font-size:40px;
+            position: relative;
+            left: 40px;
+            padding-top:20px;
+            padding-bottom:20px;
+
+            background-color: white;
+            color: black;
+            width: 1435px;
+            padding-right:80px;
+            
+           
+        }
+        .div3 {
+            
+            font-size:40px;
+            position: relative;
+            left: 40px;
+            padding-top: 20px;
+
+        }
+        .div4 {
+             position: relative;
+            left: 40px;
+            padding-top:80px;
+            cursor: pointer;
+
+
+        }
+        .div5 {
+            cursor: pointer;
+            position:relative;
+            padding-top:20px;
+        }
+
+        .img1 {
+            padding-left:20px;
+            border-radius: 20px;
+            padding-bottom:40px;
+                        
+        }
+        .pic1 {
+            border-radius: 20px;
+            
+        }
+        .img2 {
+            padding-left:20px;
+                        
+        }
+        .pic2 {
+            border-radius: 20px;
+        }
+        .navbar {
+            padding-left: 20px;
+            padding-right: 20px;
+            cursor: pointer;
+        }
+        .divLast {
+            position: relative;
+            padding-top:80px;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 80px;
+
+        }
+        .l{
+           
+           background-color:lightgray;
+           position: relative;
+            
+            padding-left: 40px;
+            padding-right: 40px;
+           padding-bottom: 40px;
+                       padding-top: 40px;
+                       text-align:center;
+
+
+        }
+        .woman {
+    border-radius: 40px;
+        }
+        .dis {
+            cursor:pointer;
+        }
+        .submit {
+             background-color: transparent;
+     border-radius: 10px;
+     border:  3px solid black;
+     
+     width: 20%;
+     box-shadow: 0px 2px 4px 0px #757575;
+     cursor: pointer;
+        }
+        .submit:hover {
+            background-color: black;
+    color: white;
+    box-shadow: 0px 2px 4px 0px #757575;
+     cursor: pointer;
+        }
+        .discover {
+            background-color: white;
+            color: black;
+            position:relative;
+            left:40px;
+            width: 1435px;
+            height: 120px;
+            padding-right:80px;
+        }
+        .d1 {
+            background-color: white;
+            color:black;
+            position:relative;
+            left:40px;
+            width: 1435px;
+            height: 120px;
+            padding-right:80px;
+            
+        }
+        .link1 {
+            cursor: pointer;
+            color:black;
+            text-decoration-line:none;
+        }
+        .link1:hover {
+            cursor: pointer;
+            color:black;
+            text-decoration-line:underline;
+        }
+    </style>
+    <div class="div1">
+        <br />
+        <div class="div2"><center><a class="link1"><h2><b>Live Anywhere<i class="fas fa-angle-double-right"></i></b></h2></a></center></div><br />
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a><figure class="img1">
+                <img class="pic1" src="imgs/sidekix-media-L6-yKzsrJzE-unsplash.jpg" height="290" width="345" />
+                <figcaption style="text-align: center"><b>Villas & Apts</b></figcaption>
+            </figure></a>
+         <a><figure class="img1">
+                <img class="pic1" src="imgs/mohamed-ali-oji_NGmBI5o-unsplash.jpg" height="290" width="345" />
+                <figcaption style="text-align: center"><b>Unique Stays</b></figcaption>
+            </figure></a>
+            <a><figure class="img1">
+                <img class="pic1" src="imgs/ben-turnbull-hbGO-Oie32E-unsplash.jpg" height="290" width="345" />
+                <figcaption style="text-align: center"><b>Farms & Nature</b></figcaption>
+            </figure></a>
+        
+            <a><figure class="img1">
+                <img class="pic1" src="imgs/alvan-nee-T-0EW-SEbsE-unsplash.jpg" height="290" width="345" />
+                <figcaption style="text-align: center"><b>Pets Allowed</b></figcaption>
+            </figure></a>
+
+            </nav><br /><br /> <div class="discover">
+            <div class="div5"><center><a class="link1"><h2 class="dis"><b>Discover Experiences<i class="fas fa-angle-double-right"></i></b></a></h2></center></div>
+            <div class="div6"><center><h4><b>Unique Activities with local experts - in person or online</b></h4></center></div><br /></div>
+            <br />
+            <div class="div4">
+            <a><img class="woman" src="imgs/5b%20(1).png" width="1440" height="580"   /></a>
+                
+        </div><br />
+            <br /><br /><br />
+           <div class="d1"> <div class="div3"><center><h2><b>Plan your next trip with us</b></h2></center></div>
+            <div class="div6"><center><a class="link1"><h4><b>Explore more <i class="fas fa-angle-double-right"></i></b></h4></center></a></div><br /></div><br /><br />
+            <nav class="navbar navbar-expand-lg navbar-light">
+            <figure class="img1">
+                <img class="pic1" src="imgs/delhi.jpg"  height="280" width="345" />
+                <figcaption style="text-align: center"><b>New Delhi</b></figcaption>
+            </figure>
+         <figure class="img1">
+                <img class="pic1" src="imgs/jaipur.jpg" height="280" width="345" />
+                <figcaption style="text-align: center"><b>Jaipur</b></figcaption>
+            </figure>
+            <figure class="img1">
+                <img class="pic1" src="imgs/goa.jpg" height="280" width="335" />
+                <figcaption style="text-align: center"><b>Goa</b></figcaption>
+            </figure>
+         <figure class="img1">
+                <img class="pic1" src="imgs/j&k.jpg" height="280" width="345" />
+                <figcaption style="text-align: center"><b>Jammu & Kashmir</b></figcaption>
+            </figure>
+
+            </nav>
+        
+            
+<div class="divLast">
+    <div class="l">
+                <center><h2><b>Why book with us</b></h2></center><br /><br />
+                <h5>Flexible payment<i class="fa fa-check"></i></h5>
+                <h6>Lock in your trip with a deposit and then pay the rest in instalments whenever you like, with no interest or fees. </h6><br />
+                <h5>Flexible deposit<i class="fa fa-check"></i></h5>
+                <h6>Cancel up to 21 days before departure*, and you can transfer your deposit to another trip or hold it on file. </h6><br />
+                <h5>No change fees<i class="fa fa-check"></i></h5>
+                <h6>Change your travel plans up to 21 days before your departure and there’ll be no fees* to change trips.</h6><br />
+                <button type="submit" class="submit">Learn more about flexible booking</button></div> <br />
+           
+        </div>
+        
+            
+       
+
+
+
+
+
+
+    </div>
+</asp:Content>
+

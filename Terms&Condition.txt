@@ -1,0 +1,131 @@
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="TermsAndConditions.aspx.cs" Inherits="WebApplication2.TermsAndConditions" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        
+        .first {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: white;
+           
+        }
+        .container {
+            background-color:white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            width: 1200px;
+            
+            
+            
+        }
+        h4 {
+            font-family:"Trirong", serif;
+            color: black;
+           
+        }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 20;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0px;
+            border-radius: 20px;
+  
+        }
+       
+    </style>
+
+   <div class="first">  
+   <div class="container" >
+        
+  
+                        <h1 style = "font-family: Trirong, serif; color:black; opacity: 1"><center>Terms & Conditions</center></h1>
+                        <br />  
+                        <h4>INTRODUCTION</h4><br />
+                        <p>(a) This site is owned and operated by Wanderlust Tourism Council with its registered offices at P.O. Box 24624, Delhi, India. In these terms and conditions (“Terms and Conditions”), "we", "our" or "us" means WANDERLUST TOURISM COUNCIL. “You” and “Your” refers to the persons accessing this site (including persons who access this site on the behalf of other persons.</p>
+                        <br />
+                         <p>(b) Please read the Terms and Conditions carefully as they apply to your use of the site www.wanderlust.com( the “Website”). By using the site(s) you agree to be bound by the Terms and Conditions.</p>
+                         <br />
+                        <p>(c) We may revise the Terms and Conditions from time to time without any notice to you.. By using this Website, you are deemed to have agreed to be bound by the latest version of it.</p>
+                        <br />
+                        <p>(d) Your use of some parts or features of the Website may be governed by additional terms and conditions. Where this is the case you will be notified accordingly, and those additional terms and conditions:</p>
+                        <br />
+                        <p>1. will apply to your use of such parts or features of the site(s) in addition to these terms and conditions; and</p>
+                        <p>2. will prevail over the Terms and Conditions to the extent of any inconsistency.
+                        </p> <br /> <br />
+                        <h4>INTELLECTUAL PROPERTY RIGHTS</h4><br />
+                        <p>(a) You acknowledge that the Content on the site(s) is subject to copyright, trade mark and possibly other intellectual property rights. In these Terms and Conditions, "Content" means anything that you may see, read, hear, upload, download or access on or via the Website (including but not limited to messages, files, data, software, images, artwork, graphics, design, photographs, illustrations, text, music, songs, videos, tags and other materials or subject-matter on the site(s)).</p>
+                     
+                        <p>(b) Unless You are expressly authorised by us, or otherwise by law, You must not do any of the following yourself, or permit or authorise any other person to:</p>
+                        <br />
+                        <p>1. sell, reproduce, publish, distribute, communicate to the public (e.g. by making available online or electronically transmitting) modify, display, perform in public, prepare derivative works based on or make an adaptation of, repost or otherwise use any of the Content (or any readily identifiable portion of the Content) in any way without our prior written consent; or</p>
+                        <p>2. otherwise infringe the intellectual property rights of any person in using the Website or any Content.</p>
+                        <br />
+                        <h4>LINKS, DOWNLOADS, PLUG-INS, FEATURES AND ADVERTISEMENTS</h4> <br />
+                        <p>(a) We have not reviewed all of the downloads, plug-ins, features or advertisements linked to the Website(s) and are not responsible for the content or accuracy of any such off-Website materials, including any websites linked to the Website(s) through advertisements or search engines (collectively, Third Party Material). The linking of our Website(s) to any Third Party Material does not imply that we endorse the linked material, and You use the links at your own risk. We do not accept any responsibility or liability for any claims, losses, costs, expenses or damages of any kind (including legal fees) arising out of your use of these links or of the descriptions or information supplied there.</p>
+
+                        <p>(b) You agree that you will not misuse any downloadable Content included on the Website(s), including but not limited to, reproducing, adapting, communicating the Content to the public, including the Content on another website or making misleading or false representations about the Content, unless expressly authorised by WTC.</p>
+
+                        <p>(c) Your correspondence or dealings with, or participation in promotions or business of, advertisers on the Website(s) are solely between you and such advertisers. We will not be liable or responsible for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of advertisements on the Website(s).</p>
+                        <br />
+                        <h4>SECURITY OF INFORMATION</h4><br />
+                        <p>Unfortunately no data transmission over the Internet can be guaranteed as totally secure. Whilst we strive to protect such information, we do not warrant and cannot ensure the security of any information which you transmit to us. Accordingly any information which you transmit to us is transmitted at your own risk, however once we receive your transmission, we will take reasonable steps to preserve the security of such information in accordance with applicable laws.</p>
+                        <br />
+                        <h4>DISCLAIMER OF LIABILITY</h4><br />
+                        <p>(a) Your use of the Website(s) is at your own risk. You must not rely on any statement published on or linked to the Website(s) without first making your own enquiries to verify the information.
+                        </p>
+                        <p>(b) We exclude all warranties and liability to the fullest extent permissible under any Applicable Law. If a jurisdiction does not allow the exclusion of implied warranties or liability but does allow limitation to a certain maximum extent, then we limit our warranties and liability to that extent.</p>
+                        <p>(c) To the extent permitted by law, all information on or linked to on the Website(s) is provided "as is" and "as available" without any warranty or representation regarding condition, either express or implied, including any implied warranties of merchantability, fitness for a particular purpose, safety, quality, freedom from defects or non-infringement.</p>
+                        <p>(d) To the extent permitted by law, we do not accept any responsibility or liability for:</p>
+                        <p>1. any statement in the material on or linked to the Website(s); or</p>
+                        <p>2. any direct, indirect, incidental or consequential loss related to or arising from your doing, or not doing, anything as a result of using (or being unable to use) the Website(s) and its Content. This includes any claims, losses, costs, expenses or damages of any kind whatsoever (including legal fees) incurred by you or by any third party, whether based on warranty, contract, tort, negligence or any other legal theory, and whether or not we know of the possibility of such damage.</p>
+                        <p>(A) the replacement of the goods or the supply of equivalent goods;</p>
+                        <p>(B) the repair of the goods;</p>
+                        <p>(C) the payment of the cost of replacing the goods or of acquiring equivalent goods; or</p>
+                        <p>(D) the payment of the cost of having the goods repaired; or</p><br />
+                        <p><i>in the case of services:</i></p>
+                        <p>(A) the supply of the services again; or</p>
+                        <p>(B) the payment of the cost of having the services supplied again.</p><br />
+
+
+                        <h4>MISCELLANEOUS PROVISIONS</h4><br />
+                        <p>(a) If any part of the Terms and Conditions is held to be unenforceable, the unenforceable part must be given effect to the greatest extent possible and the remainder will remain in full force and effect.</p>
+
+                        <p>(b) The Terms and Conditions, and the use of the Website(s) and any Content thereof, are in all respects governed by the laws of Indian Constituition. The Indian courts shall have non-exclusive jurisdiction to adjudicate any disputes, which may arise as a result. To the fullest extent permitted by law, you agree that Wanderlust Tourism Council reserves the right to bring an action against you in any country it deems appropriate.</p>
+
+                        <p>You agree that we may in our sole discretion terminate or suspend your use of the Website and Content at any time and for any or no reason in its sole discretion, even if access and use continues to be allowed to others. Upon such suspension or termination, you must immediately (a) discontinue use of the Website, and (b) destroy any copies You have made of any portion of the Content. Accessing the Website and Content such termination, suspension or discontinuation shall constitute an act of trespass. Further, you agree that we shall not be liable to You or any third party for any termination or suspension of Your access to the Website and Content.</p>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="imgs/Circle-icons-arrow-up.svg.png" height="35" width="35" /></button>
+    </div> 
+    
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                     mybutton.style.display = "block";
+                 }
+                 else {
+                      mybutton.style.display = "none";
+                  }
+            }
+            function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+            }
+    </script>
+</asp:Content>
